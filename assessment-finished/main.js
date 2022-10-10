@@ -7,10 +7,10 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-const storyText = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
-const insertX = ['Willy the Goblin', 'Big Daddy', 'Father Christmas'];
-const insertY = ['the soup kitchen', 'Disneyland', 'the White House'];
-const insertZ = ['spontaneously combusted', 'melted into a puddle on the sidewalk', 'turned into a slug and crawled away'];
+const storyText = '華氏40度のとき、:insertx: は出かけた。 :inserty: についたとき、怖がって:insertz:。Bobは一部始終を見ていましたが、驚きませんでした。:insertx: ３００ポンドの, とても暑い日だった。';
+const insertX = ['津田', 'ミッキー', 'スヌーピー'];
+const insertY = ['スカイツリー,　'ディズニーランド', '首相官邸'];
+const insertZ = ['歩道の水たまりに溶けていった。', '自然発火しました。', 'なめくじになって道を這って逃げた。'];
 
 randomize.addEventListener('click', result);
 
@@ -32,10 +32,10 @@ function result() {
   }
 
   if (document.getElementById("uk").checked) {
-    const weight = `${Math.round(300*0.0714286)} stone`;
-    const temperature =  `${Math.round((94-32) * 5 / 9)} centigrade`;
-    newStory = newStory.replace('94 fahrenheit', temperature);
-    newStory = newStory.replace('300 pounds', weight);
+    const weight = `50kg`;
+    const temperature =  `摂氏−1度`;
+    newStory = newStory.replace('華氏４０度', temperature);
+    newStory = newStory.replace('300ポンド', weight);
   }
 
   story.textContent = newStory;
