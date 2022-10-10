@@ -31,7 +31,7 @@ function result() {
     newStory = newStory.replace('Bob', name);
   }
 
-  if (document.getElementById("uk").checked) {
+  if (document.getElementById("jp").checked) {
     const weight = `50kg`;
     const temperature =  `摂氏−1度`;
     newStory = newStory.replace('華氏４０度', temperature);
